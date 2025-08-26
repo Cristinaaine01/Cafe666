@@ -6,14 +6,33 @@
     padding: 0px;
 
 }
+
+.bgpri{
+    background-color: #b49045;
+}
+
+.bgsec{
+    background-color:  #d1aa5e;
+}
+
 .menu{
-    height: 95vh;
-    
+    height: 95vh;  
     overflow-y: scroll
 }
 
 .cabecalho{
-  height: 5vh;  
+    height: 5vh;  
+}
+
+.zoom {
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
 }
 
 .card{
@@ -28,10 +47,6 @@
 
 }
 
-
-.bgpri{
-  background-color: #b49045;
-}
-.bgsec{
-  background-color:  #d1aa5e;
+.pdoaside{
+    
 }
