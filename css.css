@@ -4,7 +4,7 @@
     margin-right: 0px;
     padding: 0px;
     font-family: "Times New Roman", Times, serif;
-
+    text-decoration: none;
 }
 
 .bgpri{
@@ -41,7 +41,15 @@
 }
 
 .botaocard{
+    background-color:  #d1aa5e;
+    border-color:  #44381f;
+    color:  #44381f;
+}
 
+.botaocard:hover{
+    background-color:  #886f3c;
+    border-color:  #cfb16f;
+    color:  #cfb16f;
 }
 
 .botaoexpresso{
@@ -51,6 +59,7 @@
 .pdoaside{
     
 }
+
 .ICON{
     width: 100px;
     height: 100px;
@@ -59,37 +68,68 @@
  
 
 }
+
 .Botaocafes{
-   width: 100px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top:10px;
+    margin:10px;
+    width: 100px;
     border-radius: 10px;
     background-color: #b49045;
- 
+    border-color:  #44381f;
+    color:  #44381f;
 }
+
 .Botaosobremesa{
-   width: 100px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top:10px;
+    margin:10px;
+    width: 100px;
     border-radius: 10px;
     background-color: #b49045;
+    border-color:  #44381f;
+    color:  #44381f;
 }
+
+.Botaocafes:hover{
+    margin:10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color:  #886f3c;
+    border-color:  #cfb16f;
+    color:  #cfb16f;
+}
+
+.Botaosobremesa:hover{
+    margin:10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color:  #886f3c;
+    border-color:  #cfb16f;
+    color:  #cfb16f;
+}
+
 .Partebranca{
-    
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
 }
+
 .card{
     background-color: #d4bc8d;
 }
+
 .btpedido{
-   margin-left: 100px;
-   margin-top: 10px;
-  
+   margin: 10px;
+   background-color: #139244;
+   color: #093d1d;
+   border-color: #093d1d;
 }
+
+.btpedido:hover{
+   margin: 10px;
+   background-color: #097c35;
+   color: #3ada77;
+   border-color: #3ada77;
+}
+
 a{
     color: black;
+    text-decoration: none;
 }
