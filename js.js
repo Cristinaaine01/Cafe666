@@ -125,6 +125,76 @@ function IntEMais(){
 
 }
 
+function Comprar(){
+    alert("Compra realizada com sucesso");
+
+    vezesrodadasexpresso=0;
+    pdoasideexpresso.innerHTML=("");
+
+    vezesrodadasexpressoduplo=0;
+    pdoasideexpressoduplo.innerHTML=("");
+
+    vezesrodadasexpressotriplo=0;
+    pdoasideexpressotriplo.innerHTML=("");
+
+    vezesrodadascapuccino=0;
+    pdoasidecapuccino.innerHTML=("");
+
+    vezesrodadascapuccinocomcanela=0;
+    pdoasidecapuccinocomcanela.innerHTML=("");
+
+    vezesrodadascapuccinodeavela=0;
+    pdoasidecapuccinodeavela.innerHTML=("");
+
+    vezesrodadaslatte=0;
+    pdoasidelatte.innerHTML=("");
+
+    vezesrodadasmacchiato=0;
+    pdoasidemacchiato.innerHTML=("");
+
+    vezesrodadascafecreme=0;
+    pdoasidecafecreme.innerHTML=("");
+
+    vezesrodadasaffogato=0;
+    pdoasideaffogato.innerHTML=("");
+
+    vezesrodadasmochabreve=0;
+    pdoasidemochabreve.innerHTML=("");
+
+    vezesrodadasmocha=0;
+    pdoasidemocha.innerHTML=("");
+
+    vezesrodadaspetitgateau=0;
+    pdoasidepetitgateau.innerHTML=("");
+
+    vezesrodadassorvetedecreme=0;
+    pdoasidesorvetedecreme.innerHTML=("");
+
+    vezesrodadasdonut=0;
+    pdoasidedonut.innerHTML=("");
+
+    vezesrodadasminidonut=0;
+    pdoasideminidonut.innerHTML=("");
+
+    vezesrodadasmilkshakedecreme=0;
+    pdoasidemilkshakedecreme.innerHTML=("");
+
+    vezesrodadasbrownie=0;
+    pdoasidebrownie.innerHTML=("");
+
+    vezesrodadastortadecarameloecanela=0;
+    pdoasidetortadecarameloecanela.innerHTML=("");
+
+    vezesrodadaschurros=0;
+    pdoasidechurros.innerHTML=("");
+
+    vezesrodadasflan=0;
+    pdoasideflan.innerHTML=("");
+
+    total = 0.00;
+    pdoasidetotal.innerHTML=("Total: R$ " + total);
+}
+
 /*----------------------------------------------------------------------------*/
 /* EXPRESSO*/
 function MostrarExpresso() {
