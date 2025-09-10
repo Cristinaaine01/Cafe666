@@ -1,302 +1,322 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-    	<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Cafe666</title>
-    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="js.js"></script>
-    	<link href="css.css" rel="stylesheet">
-	</head>
-	<body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Café666</title>
 
-        <div class="container-fluid">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js.js"></script>
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+        <!--CABEÇAÇHO-->
+    <header id="cabecalho">
+        <h1>Café666</h1>
+    </header>
+
+    <div class="content">
+
+        <!--SIDEBAR 1-->
+        <aside class="bgsec">
+            <center>
+                <button class="btn Botaocafes"><a href="#CF">Cafés</a></button>
+                <button class="btn Botaosobremesa"><a href="#CS">Sobremesas</a></button>
+            </center>
+           
+        </aside>
+
+        <!--MAIN-->
+        <main>
             <div class="row">
-                <!--SIDEBAR PRINCIPAL-->
-                <aside class="col-1 bgsec">
-                    <img src="https://static.thenounproject.com/png/1149467-200.png" class="ICON " alt="ICON">
-                    <!--Botoes Atalhos-->
-                    <div>
-                        <center>
-                            <button class="btn Botaocafes"><a href="#CF">Cafés</a></button>
-                            <button class="btn Botaosobremesa"><a href="#CS">Sobremesas</a></button>
-                        </center>
+
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <!--CARDS 1-->
+                <h2 class="text-center col-12" id="CF">Expressos</h2>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://i0.wp.com/blog.guanabaracafe.com/wp-content/uploads/2024/02/Design-sem-nome-34.png?fit=500%2C500&ssl=1" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Expresso</h5>
+                            <p class="card-text">Um café feito com perfeição, grãos 100% arabica de qualidade especial, carregando notas amendoadas e um fragancia impecavel</p>
+                            <p class="card-text"><small class="text-body-secondary">R$10,00</small></p>
+                            <button id="botaoexpresso" class="btn botaocard" onclick="MostrarExpresso()">Adicionar ao Carrinho</button>
+                        </div> 
                     </div>
-                </aside>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1_mini.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Expresso Duplo</h5>
+                            <p class="card-text">Um Expresso com o dobro de café moido.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$20,00</small></p>
+                            <button id="botaoexpressoduplo" class="btn botaocard" onclick="MostrarExpressoDuplo()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://okinaki.com.br/wp-content/uploads/2023/07/cafeexpresso-500x500.png" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Expresso Triplo</h5>
+                            <p class="card-text">Um Expresso com o triplo de café moido.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$30,00</small></p>
+                            <button id="botaoexpressotriplo" class="btn botaocard" onclick="MostrarExpressoTriplo()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
-                <!--MAIN-->
-                <main class="col-11 container-fluid"> 
-                    
-                        <div class="row">
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                    <!--HEADER-->
-                            <header class="cabecalho col-12 bgpri container-fluid">
-                                <div class="row">
-                                    <h1 class="text-center col-9">Café666</h1> 
-                                    <h2 class="text-center col-3">Pedidos</h2>
-                                </div>
-                            </header>
+                <!--CARDS 2 -->
 
-                    <!--CONTEÚDO-->
-                            <content class="menu col-9  container-fluid ">
+                <h2 class="text-center col-12">Capuccinos</h2>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://coffeture.com/wp-content/uploads/2025/08/cafecremoso-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Capuccino</h5>
+                            <p class="card-text">Clássico italiano: equilíbrio perfeito entre espresso, leite vaporizado e espuma. Finalizado com um toque de canela ou chocolate, se desejar.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 13,00</small></p>
+                            <button id="botaocapuccino" class="btn botaocard" onclick="MostrarCapuccino()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_623263-MLB74346111577_022024-O.webp" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Capuccino com canela </h5>
+                            <p class="card-text">uma simples adição de canela ao capuccino</p>
+                            <p class="card-text"><small class="text-body-secondary">R$13,50</small></p>
+                            <button id="botaocapuccinocomcanela" class="btn botaocard" onclick="MostrarCapuccinoComCanela()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://sachefmio.blob.core.windows.net/fotos/cappuccino-de-nutella-200ml-a754c88f-fa74-4dd3-abf5-f8e467a4433b.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Capuccino de avelán</h5>
+                            <p class="card-text">uma versão mais deliciosa do capuccino classico, usando avelan no lugar de chocolate</p>
+                            <p class="card-text"><small class="text-body-secondary">R$16,00</small></p>
+                            <button id="botaocapuccinodeavela" class="btn botaocard" onclick="MostrarCapuccinoDeAvela()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
-                                
-                                     <!--Card grup 1-->
-                                <h2 class="text-center col-12" id="CF">Expressos</h2>
-                                <div class="card-group">
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://i0.wp.com/blog.guanabaracafe.com/wp-content/uploads/2024/02/Design-sem-nome-34.png?fit=500%2C500&ssl=1" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Expresso</h5>
-                                            <p class="card-text">Um café feito com perfeição, grãos 100% arabica de qualidade especial, carregando notas amendoadas e um fragancia impecavel</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$10,00</small></p>
-                                            <button id="botaoexpresso" class="btn botaocard" onclick="MostrarExpresso()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <!--CARDS 3 -->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://cdn.sistemawbuy.com.br/arquivos/f101ef5b9be464a6c8854310ae5f5327/produtos/65bb164199b0d/5fc4fca2a8cea2deb2743064358f7bee-65bb21d8524e1_mini.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Expresso Duplo</h5>
-                                            <p class="card-text">Um Expresso com o dobro de café moido.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$20,00</small></p>
-                                            <button id="botaoexpressoduplo" class="btn botaocard" onclick="MostrarExpressoDuplo()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <h2 class="text-center col-12">Outros</h2>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://www.sugarandsoul.co/wp-content/uploads/2021/02/breve-latte-recipe-4-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Latte</h5>
+                            <p class="card-text">Espresso suave com bastante leite vaporizado e uma leve camada de espuma. Ideal para quem prefere um café mais leve e cremoso.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 13,00</small></p>
+                            <button id="botaolatte" class="btn botaocard" onclick="MostrarLatte()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://podmkr.com/wp-content/uploads/2023/11/latte-macchiato-500x500.png" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Macchiato </h5>
+                            <p class="card-text">Espresso marcado com um toque de espuma de leite. Intenso e elegante, para os que gostam de sentir o café puro com apenas um toque de suavidade.</p>
+                            <p class="card-text"><small class="text-body-secondary"> R$ 11,00</small></p>
+                            <btn id="botaomacchiato" class="btn botaocard" onclick="MostrarMacchiato()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://hotelbeachgarden.com/wp-content/uploads/2024/08/Cup-Of-Creamy-Coffee-500x500-1.png" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafe creme</h5>
+                            <p class="card-text">Versão francesa do café com leite: espresso encorpado servido com creme de leite, criando uma bebida rica e aveludada.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 14,00</small></p>
+                            <btn id="botaocafecreme" class="btn botaocard" onclick="MostrarCafeCreme()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://okinaki.com.br/wp-content/uploads/2023/07/cafeexpresso-500x500.png" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Expresso Triplo</h5>
-                                            <p class="card-text">Um Expresso com o triplo de café moido.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$30,00</small></p>
-                                            <button id="botaoexpressotriplo" class="btn botaocard" onclick="MostrarExpressoTriplo()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                </div>
+                <!--CARDS 4 -->
 
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://cdn.thefreshmancook.com/wp-content/uploads/2024/04/Affogato-Recipe-500x500.png" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Affogato</h5>
+                            <p class="card-text">Uma bola de sorvete de creme “afogada” em um espresso quente. A união perfeita entre o quente e o frio, o amargo e o doce.</p>
+                            <p class="card-text"><small class="text-body-secondary"> R$ 14,00</small></p>
+                            <button id="botaoaffogato" class="btn botaocard" onclick="MostrarAffogato()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM80qpyngVao7p6qus6v8y5zKOhpk9w4CDaw&s" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mocha breve </h5>
+                            <p class="card-text">Um mocha um pouco mais suave</p>
+                            <p class="card-text"><small class="text-body-secondary"> R$ 15,50</small></p>
+                            <button id="botaomochabreve" class="btn botaocard" onclick="MostrarMochaBreve()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw0hDBcZDwz5HfNBNEpMET1ruh-7Js0uuq4w&s" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mocha</h5>
+                            <p class="card-text">Combinação cremosa de café espresso, leite vaporizado, creme de leite e calda de chocolate,  Uma bebida doce e encorpada, perfeita para quem ama café com um toque indulgente</p>
+                            <p class="card-text"><small class="text-body-secondary"> R$ 16,00</small></p>
+                            <button id="botaomocha" class="btn botaocard" onclick="MostrarMocha()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                     <!--Card grup 2-->
-                                <h2 class="text-center">Capuccinos</h2>
-                                <div class="card-group">
+                <!--CARDS 5 -->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://coffeture.com/wp-content/uploads/2025/08/cafecremoso-500x500.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Capuccino</h5>
-                                            <p class="card-text">Clássico italiano: equilíbrio perfeito entre espresso, leite vaporizado e espuma. Finalizado com um toque de canela ou chocolate, se desejar.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 13,00</small></p>
-                                            <button id="botaocapuccino" class="btn botaocard" onclick="MostrarCapuccino()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <h2 class="text-center col-12" id="CS">Sobremesa</h2>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://p2.trrsf.com/image/fget/cf/500/0/images.terra.com/2020/11/16/2044466180-sirva-o-petit-gateau-diretamente-no-prato-ou-acompanhado-de-sorvete-fonte-pinterest-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Petit gateau</h5>
+                            <p class="card-text">Bolo individual com casquinha firme e recheio de chocolate derretido, acompanhado de uma bola de sorvete de creme</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 20,00</small></p>
+                            <button  id="botaopetitgateau" class="btn botaocard" onclick="MostrarPetitGateau()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://i0.wp.com/cozinharoman.com/wp-content/uploads/2022/01/Sorvete-de-Creme-cozinharoman-ig-min.jpg?resize=500%2C500&ssl=1" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sorvete de creme</h5>
+                            <p class="card-text">Uma bola de sorvete servida em um pote de vidro trasparente, com calda a sua escolha</p>
+                            <p class="card-text"><small class="text-body-secondary">R$4,00</small></p>
+                            <button  id="botaosorvetedecreme" class="btn botaocard" onclick="MostrarSorveteDeCreme()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://cdn.christmas-cookies.com/wp-content/uploads/2021/06/easy-baked-mini-donuts-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Donots</h5>
+                            <p class="card-text">A versão clássica americana: macios, com cobertura de chocolate, baunilha ou morango. Simplesmente deliciosos.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 12,00</small></p>
+                            <button  id="botaodonut" class="btn botaocard" onclick="MostrarDonut()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://http2.mlstatic.com/D_NQ_NP_623263-MLB74346111577_022024-O.webp" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Capuccino com canela </h5>
-                                            <p class="card-text">uma simples adição de canela ao capuccino</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$13,50</small></p>
-                                            <button id="botaocapuccinocomcanela" class="btn botaocard" onclick="MostrarCapuccinoComCanela()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://sachefmio.blob.core.windows.net/fotos/cappuccino-de-nutella-200ml-a754c88f-fa74-4dd3-abf5-f8e467a4433b.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Capuccino de avelán</h5>
-                                            <p class="card-text">uma versão mais deliciosa do capuccino classico, usando avelan no lugar de chocolate</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$16,00</small></p>
-                                            <button id="botaocapuccinodeavela" class="btn botaocard" onclick="MostrarCapuccinoDeAvela()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <!--CARDS 6 -->
 
-                                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://chocolate.com/cdn/shop/files/UltimateBelgianChocolateCoveredMiniDonuts-2005_500x.jpg?v=1727450565" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini donots</h5>
+                            <p class="card-text">Pequenos, fofinhos e cobertos com glacê colorido ou açúcar. Ideais para compartilhar (ou não!).</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 10,00   6 UNIDADES</small></p>
+                            <button  id="botaominidonut" class="btn botaocard" onclick="MostrarMiniDonut()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2tbFjVFHn6gA0_xN60o-w0okFHBdLPmFLQ&s" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Milk shake de creme</h5>
+                            <p class="card-text">Cremoso, gelado e feito com sorvete de baunilha de verdade. Finalizado com chantilly e calda a sua escolha.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 18,00</small></p>
+                            <button  id="botaomilkshakedecreme" class="btn botaocard" onclick="MostrarMilkShakeDeCreme()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://casadobrownie.com.br/wp-content/uploads/2025/06/brownie-farinha-arroz-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brawnie</h5>
+                            <p class="card-text">Denso, úmido e com muito chocolate. Servido morno para derreter na boca, puro prazer em cada mordida.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 14,00</small></p>
+                            <button  id="botaobrownie" class="btn botaocard" onclick="MostrarBrownie()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                     <!--Card grup 3-->
-                                <h2 class="text-center">Outros</h2>
-                                <div class="card-group">
+                <!--CARDS 7 -->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://www.sugarandsoul.co/wp-content/uploads/2021/02/breve-latte-recipe-4-500x500.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Latte</h5>
-                                            <p class="card-text">Espresso suave com bastante leite vaporizado e uma leve camada de espuma. Ideal para quem prefere um café mais leve e cremoso.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 13,00</small></p>
-                                            <button id="botaolatte" class="btn botaocard" onclick="MostrarLatte()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card">
+                        <img src="https://www.easyanddelish.com/wp-content/uploads/2021/10/butterscotch-pie-brown-butter-4-torta-de-caramelo-americana-4-1-500x500.jpg" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta Caramelo e canela</h5>
+                            <p class="card-text">Uma combinação perfeita de massa amanteigada, recheio cremoso de caramelo e toque suave de canela. Um sabor aconchegante.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 16,00</small></p>
+                            <button  id="botaotortadecarameloecanela" class="btn botaocard" onclick="MostrarTortadeCarameloECanela()">Adicionar ao Carrinho</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://img.viverdebrigadeiro.com.br/wp-content/uploads/2025/06/churros-caseiro-500x500.jpg?strip=all&lossy=0&ssl=1" class="card-img-top zoom" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Churros</h5>
+                            <p class="card-text">Massa crocante por fora e macia por dentro, recheados com doce de leite e polvilhados com açúcar e canela. Acompanha calda extra.</p>
+                            <p class="card-text"><small class="text-body-secondary">R$ 15,00</small></p>
+                            <button  id="botaochurros" class="btn botaocard" onclick="MostrarChurros()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12  col-12">
+                    <div class="card">
+                        <img src="https://img.viverdebrigadeiro.com.br/wp-content/uploads/2025/07/flan-espanhol-500x500.jpg?strip=all&lossy=0&ssl=1" class="card-img-top zoom" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flan</h5>
+                                <p class="card-text">Clássico e delicado, nosso flan é feito com leite condensado e coberto com calda de caramelo dourada. Textura leve e sabor marcante.</p>
+                                <p class="card-text"><small class="text-body-secondary">R$ 12,00</small></p>
+                                <button  id="botaoflan" class="btn botaocard" onclick="MostrarFlan()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://podmkr.com/wp-content/uploads/2023/11/latte-macchiato-500x500.png" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Macchiato </h5>
-                                            <p class="card-text">Espresso marcado com um toque de espuma de leite. Intenso e elegante, para os que gostam de sentir o café puro com apenas um toque de suavidade.</p>
-                                            <p class="card-text"><small class="text-body-secondary"> R$ 11,00</small></p>
-                                            <btn id="botaomacchiato" class="btn botaocard" onclick="MostrarMacchiato()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://hotelbeachgarden.com/wp-content/uploads/2024/08/Cup-Of-Creamy-Coffee-500x500-1.png" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cafe creme</h5>
-                                            <p class="card-text">Versão francesa do café com leite: espresso encorpado servido com creme de leite, criando uma bebida rica e aveludada.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 14,00</small></p>
-                                            <btn id="botaocafecreme" class="btn botaocard" onclick="MostrarCafeCreme()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
+            </div>
+        </main>
+ 
+        <div class="pedidos">
 
-                                </div>
+            <!--SIDEBAR 2-->
+            <center>
+                <h2>Pedidos</h2>
+            </center>
 
-                                     <!--Card grup 4-->
-                                <div class="card-group">
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://cdn.thefreshmancook.com/wp-content/uploads/2024/04/Affogato-Recipe-500x500.png" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Affogato</h5>
-                                            <p class="card-text">Uma bola de sorvete de creme “afogada” em um espresso quente. A união perfeita entre o quente e o frio, o amargo e o doce.</p>
-                                            <p class="card-text"><small class="text-body-secondary"> R$ 14,00</small></p>
-                                            <button id="botaoaffogato" class="btn botaocard" onclick="MostrarAffogato()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM80qpyngVao7p6qus6v8y5zKOhpk9w4CDaw&s" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mocha breve </h5>
-                                            <p class="card-text">Um mocha um pouco mais suave</p>
-                                            <p class="card-text"><small class="text-body-secondary"> R$ 15,50</small></p>
-                                            <button id="botaomochabreve" class="btn botaocard" onclick="MostrarMochaBreve()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw0hDBcZDwz5HfNBNEpMET1ruh-7Js0uuq4w&s" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mocha</h5>
-                                            <p class="card-text">Combinação cremosa de café espresso, leite vaporizado, creme de leite e calda de chocolate,  Uma bebida doce e encorpada, perfeita para quem ama café com um toque indulgente</p>
-                                            <p class="card-text"><small class="text-body-secondary"> R$ 16,00</small></p>
-                                            <button id="botaomocha" class="btn botaocard" onclick="MostrarMocha()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                     <!--Card grup 5-->
-                                <h2 class="text-center" id="CS">Sobremesas</h2>
-                                <div class="card-group">
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://p2.trrsf.com/image/fget/cf/500/0/images.terra.com/2020/11/16/2044466180-sirva-o-petit-gateau-diretamente-no-prato-ou-acompanhado-de-sorvete-fonte-pinterest-500x500.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Petit gateau</h5>
-                                            <p class="card-text">Bolo individual com casquinha firme e recheio de chocolate derretido, acompanhado de uma bola de sorvete de creme</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 20,00</small></p>
-                                            <button  id="botaopetitgateau" class="btn botaocard" onclick="MostrarPetitGateau()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://i0.wp.com/cozinharoman.com/wp-content/uploads/2022/01/Sorvete-de-Creme-cozinharoman-ig-min.jpg?resize=500%2C500&ssl=1" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Sorvete de creme</h5>
-                                            <p class="card-text">Uma bola de sorvete servida em um pote de vidro trasparente, com calda a sua escolha</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$4,00</small></p>
-                                            <button  id="botaosorvetedecreme" class="btn botaocard" onclick="MostrarSorveteDeCreme()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://cdn.christmas-cookies.com/wp-content/uploads/2021/06/easy-baked-mini-donuts-500x500.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Donots</h5>
-                                            <p class="card-text">A versão clássica americana: macios, com cobertura de chocolate, baunilha ou morango. Simplesmente deliciosos.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 12,00</small></p>
-                                            <button  id="botaodonut" class="btn botaocard" onclick="MostrarDonut()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                   <!--Card grup 6-->
-                                
-                                <div class="card-group">
-
-                                <div class="card col-lg-4 col-12">
-                                <img src="https://chocolate.com/cdn/shop/files/UltimateBelgianChocolateCoveredMiniDonuts-2005_500x.jpg?v=1727450565" class="card-img-top zoom" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Mini donots</h5>
-                                        <p class="card-text">Pequenos, fofinhos e cobertos com glacê colorido ou açúcar. Ideais para compartilhar (ou não!).</p>
-                                        <p class="card-text"><small class="text-body-secondary">R$ 10,00   6 UNIDADES</small></p>
-                                        <button  id="botaominidonut" class="btn botaocard" onclick="MostrarMiniDonut()">Adicionar ao Carrinho</button>
-                                    </div>
-                                </div>
-
-                                <div class="card col-lg-4 col-12">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2tbFjVFHn6gA0_xN60o-w0okFHBdLPmFLQ&s" class="card-img-top zoom" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Milk shake de creme</h5>
-                                        <p class="card-text">Cremoso, gelado e feito com sorvete de baunilha de verdade. Finalizado com chantilly e calda a sua escolha.</p>
-                                        <p class="card-text"><small class="text-body-secondary">R$ 18,00</small></p>
-                                        <button  id="botaomilkshakedecreme" class="btn botaocard" onclick="MostrarMilkShakeDeCreme()">Adicionar ao Carrinho</button>
-                                    </div>
-                                </div>
-
-                                <div class="card col-lg-4 col-12">
-                                    <img src="https://casadobrownie.com.br/wp-content/uploads/2025/06/brownie-farinha-arroz-500x500.jpg" class="card-img-top zoom" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Brawnie</h5>
-                                        <p class="card-text">Denso, úmido e com muito chocolate. Servido morno para derreter na boca, puro prazer em cada mordida.</p>
-                                        <p class="card-text"><small class="text-body-secondary">R$ 14,00</small></p>
-                                        <button  id="botaobrownie" class="btn botaocard" onclick="MostrarBrownie()">Adicionar ao Carrinho</button>
-                                    </div>
-                                </div>
-
-                                </div>
-                                       <!--Card grup 7-->
-                                
-                                <div class="card-group">
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://www.easyanddelish.com/wp-content/uploads/2021/10/butterscotch-pie-brown-butter-4-torta-de-caramelo-americana-4-1-500x500.jpg" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Torta Caramelo e canela</h5>
-                                            <p class="card-text">Uma combinação perfeita de massa amanteigada, recheio cremoso de caramelo e toque suave de canela. Um sabor aconchegante.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 16,00</small></p>
-                                            <button  id="botaotortadecarameloecanela" class="btn botaocard" onclick="MostrarTortadeCarameloECanela()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://img.viverdebrigadeiro.com.br/wp-content/uploads/2025/06/churros-caseiro-500x500.jpg?strip=all&lossy=0&ssl=1" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Churros</h5>
-                                            <p class="card-text">Massa crocante por fora e macia por dentro, recheados com doce de leite e polvilhados com açúcar e canela. Acompanha calda extra.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 15,00</small></p>
-                                            <button  id="botaochurros" class="btn botaocard" onclick="MostrarChurros()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card col-lg-4 col-12">
-                                        <img src="https://img.viverdebrigadeiro.com.br/wp-content/uploads/2025/07/flan-espanhol-500x500.jpg?strip=all&lossy=0&ssl=1" class="card-img-top zoom" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Flan</h5>
-                                            <p class="card-text">Clássico e delicado, nosso flan é feito com leite condensado e coberto com calda de caramelo dourada. Textura leve e sabor marcante.</p>
-                                            <p class="card-text"><small class="text-body-secondary">R$ 12,00</small></p>
-                                            <button  id="botaoflan" class="btn botaocard" onclick="MostrarFlan()">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                            </content>
-
-                            <aside class="col-3 bgsec">
-                                <div class="Partebranca">
+            <div id="lista-pedidos" style="min-height: 100px;">
+                <div class="Partebranca">
                                     <div class="container-fluid">
                                         <div class="row">
 
@@ -324,30 +344,19 @@
                                             <p class="col-12"></p>
                                             <p class="col-12 pdoaside" id="pdoasidetotal">Total: R$ 0</p>
 
+                                            <center>
+                                                <button class="btn btpedido" onclick="Comprar()"><h2>Fazer o pedido</h2></button>
+                                            </center>
+
                                         </div>
                                     </div>
                                 </div>
-                                <div >
-                                    <center>
-                                        <button class="btn btpedido" onclick="Comprar()"><h2>Fazer o pedido</h2></button>
-                                    </center>
-                                </div>
-                                
-
-                             
-                                
-
-                            </aside>
-
-                        </div>
-                </main>
-
             </div>
         </div>
-    
-    
-		<!--a-->
-    		<!-- Bootstrap JS -->
-    		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+    </div>
+
+    <footer>Feito por: Aline e Motre</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
